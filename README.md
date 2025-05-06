@@ -1,1 +1,2 @@
-# Lab 5 - Starter
+1) No. The "message" feature might include a feature to take and process user input, a feature to write to a buffer, a feature to flush the buffer and output it to the other user, a feature to render the message in an appropriately-sized speech bubble... etc. There are too many interdependent parts for unit testing, which is intended to be for a single component. We can't easily verify at which component a test fails.
+2) Yes. This is just a single feature and it's easy to cover all possible cases (message less than 80 characters, message exactly 80 characters, message longer than 80 characters) to ensure this specific functionality works.\
